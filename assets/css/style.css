@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url('../font/IRANSansWeb.woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    font-family: "IRANSans";
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    transition: opacity .3s ease;
+}
+
+body,
+html {
+    background-color: #ddd;
+    direction: rtl;
+}
+
+#main-box {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.radif,
+.type {
+    text-align: center;
+}
+
+td,
+th {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text {
+    font-size: 1.2em;
+}
+
+.box-modal {
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    overflow-y: auto;
+}
+
+#alert-empty,
+#alert {
+    opacity: 0;
+}
+
+#alert-empty.active,
+#alert.active {
+    opacity: 1;
+}
+
+th {
+    overflow: visible;
+}
+
+.count-font {
+    padding: 5px 10px;
+    font-weight: 100;
+    color: #000;
+    border-radius: 6px;
+    background-color: #ddd;
+    font-size: .8em;
+}
+
+.counter-box {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
